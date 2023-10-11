@@ -1,0 +1,114 @@
+---
+import { Icon } from 'astro-icon';
+import { Container } from '@littlesticks/odyssey-theme-components';
+
+const { background, color } = Astro.props;
+---
+
+<footer
+class="flex justify-center items-center"
+	style={background &&
+		`--footer-bg:${background}; --footer-color:${color} ; 
+	`}
+>
+	<Container>
+		<div
+			style="display: flex; justify-content:center; flex-direction: column; align-items: center;padding-top:20px"
+		>
+			<div class="flex justify-center shadow h-full items-center">
+				<div
+					class=""
+					style=" width:50vw; height:20vh; border-radius: 9px; 	background: #black;
+	background: radial-gradient(at bottom right, #3CB634, #FFFFFF);`}"
+				>
+					<svg
+						style="margin-right: 20px; cursor: pointer;"
+						width="30"
+						height="30"
+						viewBox="0 0 42 42"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M35.4167 6.06262C33.5067 4.1333 31.2316 2.6036 28.7242 1.56273C26.2169 0.521862 23.5273 -0.00933357 20.8125 0.000124103C9.4375 0.000124103 0.166667 9.27096 0.166667 20.646C0.166667 24.2918 1.125 27.8335 2.91667 30.9585L0 41.6668L10.9375 38.7918C13.9583 40.4376 17.3542 41.3126 20.8125 41.3126C32.1875 41.3126 41.4583 32.0418 41.4583 20.6668C41.4583 15.146 39.3125 9.95846 35.4167 6.06262ZM20.8125 37.8126C17.7292 37.8126 14.7083 36.9793 12.0625 35.4168L11.4375 35.0418L4.9375 36.7501L6.66667 30.4168L6.25 29.771C4.53697 27.0355 3.62738 23.8735 3.625 20.646C3.625 11.1876 11.3333 3.47929 20.7917 3.47929C25.375 3.47929 29.6875 5.27096 32.9167 8.52096C34.5156 10.1125 35.7827 12.0057 36.6446 14.0906C37.5064 16.1755 37.9459 18.4108 37.9375 20.6668C37.9792 30.1251 30.2708 37.8126 20.8125 37.8126ZM30.2292 24.9793C29.7083 24.7293 27.1667 23.4793 26.7083 23.2918C26.2292 23.1251 25.8958 23.0418 25.5417 23.5418C25.1875 24.0626 24.2083 25.2293 23.9167 25.5626C23.625 25.9168 23.3125 25.9585 22.7917 25.6876C22.2708 25.4376 20.6042 24.8751 18.6458 23.1251C17.1042 21.7501 16.0833 20.0626 15.7708 19.5418C15.4792 19.021 15.7292 18.7501 16 18.4793C16.2292 18.2501 16.5208 17.8751 16.7708 17.5835C17.0208 17.2918 17.125 17.0626 17.2917 16.7293C17.4583 16.3751 17.375 16.0835 17.25 15.8335C17.125 15.5835 16.0833 13.0418 15.6667 12.0001C15.25 11.0001 14.8125 11.1251 14.5 11.1043H13.5C13.1458 11.1043 12.6042 11.2293 12.125 11.7501C11.6667 12.271 10.3333 13.521 10.3333 16.0626C10.3333 18.6043 12.1875 21.0626 12.4375 21.396C12.6875 21.7501 16.0833 26.9585 21.25 29.1876C22.4792 29.7293 23.4375 30.0418 24.1875 30.271C25.4167 30.6668 26.5417 30.6043 27.4375 30.4793C28.4375 30.3335 30.5 29.2293 30.9167 28.021C31.3542 26.8126 31.3542 25.7918 31.2083 25.5626C31.0625 25.3335 30.75 25.2293 30.2292 24.9793Z"
+							fill="black"></path>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</Container>
+</footer>
+
+<style>
+	footer {
+		--footer-bg: var(--theme-primary);
+		--footer-color: var(--theme-on-primary);
+		min-height: 40vh;
+		background-color: var(--footer-bg);
+		color: var(--footer-color);
+		border-top-left-radius: var(--theme-shape-radius);
+		border-top-right-radius: var(--theme-shape-radius);
+		margin-top: 20px;
+	}
+	.footer-grid__container {
+		padding: 10vh 0 1rem 0;
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr 1fr;
+	}
+	.footer-socials__list {
+		margin: 1rem 0;
+		padding: 0;
+		display: flex;
+		list-style: none;
+	}
+	.footer-socials__item {
+		margin-right: 0.5rem;
+	}
+	.footer-link__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	.footer-link__list li {
+		margin-bottom: 0.5rem;
+	}
+	.footer-link__list li a {
+		text-decoration: none;
+	}
+	.footer-link__list li a:hover {
+		opacity: 0.84;
+	}
+	.footer-copyright__container {
+		display: flex;
+		flex-direction: column;
+		/* justify-content: space-between; */
+	}
+	.footer-copyright__container p {
+		font-size: var(--font-size-sm);
+	}
+	@media (max-width: 768px) {
+		.footer-grid__container :first-child {
+			grid-column: 1/-1;
+		}
+		.footer-grid__container {
+			padding: 5vh 0;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 1rem;
+		}
+	}
+	@media (max-width: 600px) {
+		.footer-grid__container {
+			padding: 5vh 0;
+			grid-template-columns: 1fr;
+			gap: 1rem;
+		}
+		.footer-copyright__container {
+			flex-direction: column;
+		}
+	}
+	.shadow {
+		-webkit-box-shadow: 0px 0px 107px 11px rgba(209, 34, 209, 1);
+		-moz-box-shadow: 0px 0px 107px 11px rgba(209, 34, 209, 1);
+		box-shadow: 0px 0px 107px 11px rgba(209, 34, 209, 1);
+	}
+</style>
