@@ -1,7 +1,12 @@
 {
+<<<<<<< HEAD
 	"name": "odyssey-theme",
 	"version": "2.0.2",
 	"private": false,
+=======
+	"name": "guintilab",
+	"version": "2.0.2",
+>>>>>>> 08a8288 (2)
 	"repository": {
 		"type": "git",
 		"url": "git@github.com:littlesticksdev/odyssey-theme"
@@ -12,6 +17,7 @@
 		"build": "astro build",
 		"preview": "astro preview",
 		"format": "npx prettier -w ."
+<<<<<<< HEAD
 	},
 	"devDependencies": {
 		"@astrojs/image": "^0.7.0",
@@ -31,3 +37,7 @@
 		"tailwindcss": "^3.3.3"
 	}
 }
+=======
+	}
+}
+>>>>>>> 08a8288 (2)

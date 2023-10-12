@@ -1,0 +1,25 @@
+---
+import Header from '../components/UI/Header.astro';
+import Layout from './Base.astro';
+import type { Props as BaseHeadProps } from '../components/head/BaseHead.astro';
+import Logo from '../components/Logo.astro';
+import Footer from '../components/sections/Footer.astro';
+import Button from '../components/UI/Button.astro';
+export interface Props {
+	seo?: BaseHeadProps;
+}
+
+import { nav } from '../config/nav.js';
+
+const { seo } = Astro.props as Props;
+---
+
+<Layout {seo}>
+	<Header rightMenu navData={nav} slot="header">
+		<Button slot="action-item" class="" href="https://wa.link/udn915">¡Comencemos!</Button>
+	</Header>
+	<div>
+		<slot />
+	</div>
+
+</Layout>

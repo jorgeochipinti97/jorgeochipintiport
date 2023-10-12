@@ -1,0 +1,276 @@
+---
+import { Container, FeatureCard } from '@littlesticks/odyssey-theme-components';
+
+import Layout from '../layouts/Page.astro';
+import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
+import Footer from '../components/sections/Footer.astro';
+import FeatureCardComoponent from '../components/UI/FeatureCardComponent.astro';
+import Accordion from '../components/UI/Accordion.astro';
+import Button from '../components/UI/Button.astro';
+---
+
+<Layout>
+	<HomeHeroSection />
+	<Container>
+		<section class="feature-card__section">
+			<h2 class="md:text-5xl text-2xl my-4">Elegí entre nuestra creación de plantillas.</h2>
+			<p class="mb-5">Trabajamos con la mejor tecnología y eficiencia del mercado.</p>
+			<div class="feature-card__grid">
+
+				<FeatureCardComoponent
+					href="https://nebulix.unfolding.io/"
+					title="E-commerce Nebulix"
+					imgSrc="/assets/images/home/nublix.webp"
+				/>
+				<FeatureCardComoponent
+					href="https://demos.creative-tim.com/astro-ecommerce/landing/"
+					title="E-commerce Astro"
+					imgSrc="/assets/images/home/standar.png"
+				/>
+				<FeatureCardComoponent
+					href="https://astroship.web3templates.com/"
+					title="Landing Page Astro"
+					imgSrc="/assets/images/home/landing1.png"
+				/>
+				<FeatureCardComoponent
+					href="https://tailcastsite.netlify.app/"
+					title="Landing Page Tailcast"
+					imgSrc="/assets/images/home/tailcast.png"
+				/>
+				<FeatureCardComoponent
+					href="https://astro-multiverse.vercel.app/"
+					title="Fotografía & Art"
+					imgSrc="/assets/images/home/art.png"
+				/>
+				<FeatureCardComoponent
+					href="https://astrofy-template.netlify.app/"
+					title="Portfolio Personal"
+					imgSrc="/assets/images/home/portfolio.png"
+				/>
+				<FeatureCardComoponent
+					href="https://astro-moon-landing.netlify.app/"
+					title="Landing Astro Ship"
+					imgSrc="/assets/images/home/astrolanding.png"
+				/>
+				<FeatureCardComoponent
+					href="https://astro.build/themes/details/stone/"
+					title="Landing Stone"
+					imgSrc="/assets/images/home/stone.png"
+				/>
+			</div>
+		</section>
+	</Container>
+	<Container>
+		<section class="feature-card__section" >
+			<h2 class="md:text-5xl text-2xl my-4">Últimos clientes.</h2>
+			<p class="mb-5">Descubre nuestros trabajos más recientes.</p>
+			<div class="feature-card__grid">
+				<FeatureCardComoponent
+					href="https://dublingroup.vercel.app/"
+					title="Dublin Group"
+					imgSrc="/assets/images/home/dublin.png"
+				/>
+				<FeatureCardComoponent
+					href="https://www.lazaro.tech/"
+					title="Lazaro Tech"
+					imgSrc="/assets/images/home/lazaro.png"
+				/>
+				<FeatureCardComoponent
+					href="https://royer.store/"
+					title="Royer Store"
+					imgSrc="/assets/images/home/royer.png"
+				/>
+				<FeatureCardComoponent
+					href="https://www.guinti.com/"
+					title="Guinti Travels"
+					imgSrc="/assets/images/home/travels.png"
+				/>
+			</div>
+		</section>
+	</Container>
+	<Container>
+		<section class="feature-card__section">
+			<h2 class="md:text-5xl text-2xl text-center">
+				No pierdas más tiempo, construye tu presencia en línea ahora mismo.
+
+			</h2>
+			<div
+class="flex justify-center mt-12 "
+			>
+
+				<Button slot="action-item" class="" href="https://wa.link/udn915">Trabaja conmigo</Button>
+
+
+		
+
+		</section>
+	</Container>
+	<Container>
+		<!-- <section class="feature-card__section" style="width:100vw"> -->
+		<div style="display:flex; justify-content:center">
+			<div style="width:80vw; text-align:start" class="ml-4">
+				<h3 class="md:text-3xl text-2xl mb-5"></h3>
+			</div>
+		</div>
+		<div
+			style="display:flex; flex-direction:column; justify-content:center; align-items:start"
+		>
+			<div style="display:flex;  justify-content:center; align-items:baseline">
+				<svg
+					version="1.1"
+					xmlns="http://www.w3.org/2000/svg"
+					width="10"
+					height="10"
+					viewBox="0 0 120 120"
+				>
+					<circle cx="60" cy="60" r="50" fill="RoyalBlue"></circle>
+				</svg>
+				<p style="margin-left:10px">Experiencia de Usuario Optimizada</p>
+			</div>
+			<div>
+				<p class="md:ml-5 mb-4 font-light ml-2">
+					Optimizamos tu sitio web para un rendimiento eficiente y una carga rápida, mejorando la experiencia del usuario y el posicionamiento en búsqueda.				</p>
+			</div>
+		</div>
+		<div
+			style="display:flex; flex-direction:column; justify-content:center; align-items:start"
+		>
+			<div style="display:flex;  justify-content:center; align-items:baseline">
+				<svg
+					version="1.1"
+					xmlns="http://www.w3.org/2000/svg"
+					width="10"
+					height="10"
+					viewBox="0 0 120 120"
+				>
+					<circle cx="60" cy="60" r="50" fill="RoyalBlue"></circle>
+				</svg>
+				<p style="margin-left:10px">Hosting</p>
+			</div>
+			<div>
+				<p class="md:ml-5 mb-4 font-light ml-2">
+					Alojamos tu página web para que esté 24/7 activa. Servidores ubicados
+					en EEUU.
+				</p>
+			</div>
+		</div>
+		<div
+		style="display:flex; flex-direction:column; justify-content:center; align-items:start"
+		>
+			<div style="display:flex;  justify-content:center; align-items:baseline">
+				<svg
+					version="1.1"
+					xmlns="http://www.w3.org/2000/svg"
+					width="10"
+					height="10"
+					viewBox="0 0 120 120"
+				>
+					<circle cx="60" cy="60" r="50" fill="RoyalBlue"></circle>
+				</svg>
+				<p style="margin-left:10px">Monitoreo 24hs</p>
+			</div>
+			<div>
+				<p class="md:ml-5 mb-4 font-light ml-2">
+					Monitoreamos la página web las 24 hs, para prevenir posibles caídas.
+				</p>
+			</div>
+		</div>
+		<div
+		style="display:flex; flex-direction:column; justify-content:center; align-items:start"
+		>
+			<div style="display:flex;  justify-content:center; align-items:baseline">
+				<svg
+					version="1.1"
+					xmlns="http://www.w3.org/2000/svg"
+					width="10"
+					height="10"
+					viewBox="0 0 120 120"
+				>
+					<circle cx="60" cy="60" r="50" fill="RoyalBlue"></circle>
+				</svg>
+				<p style="margin-left:10px">Mantenimiento</p>
+			</div>
+			<div>
+				<p class="md:ml-5 mb-4 font-light ml-2">
+					Actualizamos la página para mantener un rendimiento óptimo.
+				</p>
+			</div>
+		</div>
+		<div
+		style="display:flex; flex-direction:column; justify-content:center; align-items:start"
+		>
+			<div style="display:flex;  justify-content:center; align-items:baseline">
+				<svg
+					version="1.1"
+					xmlns="http://www.w3.org/2000/svg"
+					width="10"
+					height="10"
+					viewBox="0 0 120 120"
+				>
+					<circle cx="60" cy="60" r="50" fill="RoyalBlue"></circle>
+				</svg>
+				<p style="margin-left:10px">Soporte Técnico</p>
+			</div>
+			<div>
+				<p class="md:ml-5 mb-4 font-light ml-2">
+					En caso que surja algún inconveniente técnico, se resolverá a la brevedad.
+				</p>
+			</div>
+		</div>
+		<div
+		style="display:flex; flex-direction:column; justify-content:center; align-items:start" class="mb-10"
+		>
+			<div style="display:flex;  justify-content:center; align-items:baseline">
+				<svg
+					version="1.1"
+					xmlns="http://www.w3.org/2000/svg"
+					width="10"
+					height="10"
+					viewBox="0 0 120 120"
+				>
+					<circle cx="60" cy="60" r="50" fill="RoyalBlue"></circle>
+				</svg>
+				<p style="margin-left:10px">Seguridad del sitio web</p>
+			</div>
+			<div>
+				<p class="md:ml-5 mb-4 font-light ml-2">
+					Tu página web contará con certificación SSL.
+				</p>
+			</div>
+		</div>
+	</Container>
+	<Container>
+		<Accordion/>
+	</Container>
+	<Container>
+		<section class="feature-card__section py-10">
+			<h2 class="md:text-5xl text-2xl text-center">
+				¿Quieres consolidarte como una autoridad en tu industria? 
+
+			</h2>
+			<div
+class="flex justify-center mt-12 "
+			>
+			<Button slot="action-item" class="" href="https://wa.link/udn915">¡Inicia hoy!</Button>
+
+		
+
+		</section>
+	</Container>
+</Layout>
+
+<style>
+	.feature-card__section {
+		margin: var(--section-margin) auto;
+	}
+	.feature-card__grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: var(--theme-grid-gap);
+	}
+	@media (max-width: 768px) {
+		.feature-card__grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
