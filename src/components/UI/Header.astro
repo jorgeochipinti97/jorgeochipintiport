@@ -39,14 +39,14 @@ const { navData, rightMenu } = Astro.props;
 
 <header id="odysseyNavHeader" class={`${rightMenu ? "header--right" : ``.trim()}`}>
   <div class="header-logo-menu__container">
-  <button id="menuButton" title="Open Main Menu">
+  <!-- <button id="menuButton" title="Open Main Menu">
     <span id="menuButtonIconHam">
       <Icon name="ic:baseline-menu" width="24px" height="24px" />
     </span>
     <span id="menuButtonIconClose" hidden>
       <Icon name="ic:baseline-close" width="24px" height="24px" />
     </span>
-  </button>
+  </button> -->
   <a class="header-logo__link" href="/">
     <slot name="logo">
     </slot>
